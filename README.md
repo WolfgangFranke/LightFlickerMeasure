@@ -15,3 +15,7 @@ Philips Hue Being ceiling light and also some other Philips Hue dimmable and RGB
 
 <img src="doc/Philips_Hue_Being_1kHz.jpg" width="500">
 
+
+Totally smooth light sent by a Philips Filament Bulb (not dimmable).
+
+<img src="doc/Philips_Filament_0Hz.jpg" width="500">
