@@ -1,3 +1,4 @@
+# some theory and math of PWM and eye
 
 Die klassische Definition des Stroboskopeffektes allein kann die Problematik von Flimmern bzw. Flackern bei LED-Beleuchtungen nicht ausreichend beschreiben.
 
