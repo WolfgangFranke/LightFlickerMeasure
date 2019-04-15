@@ -18,7 +18,7 @@ Philips Hue Being ceiling light and also the Philips Hue Light Strip+, as well a
 
 Talking about LED strips, the Paulmann SimpLED-Strip Set (789.56) dims in the PWM frequency range of 2,5 to 4 kHz. Covered by an opaque plastic housing, I consider it as nearly flicker free. But if you install the strip in direkt sight, a flicker will be recognized when moving head or eyes.
 
-<img src="doc/Philips_Hue_Being_1kHz.jpg" width="500">
+<img src="doc/Paulmann_SimpLED-Strip_789.56_Set.jpg" width="500">
 
 
 Totally smooth light sent by a Philips Filament Bulb (not dimmable), I really enjoy it.
