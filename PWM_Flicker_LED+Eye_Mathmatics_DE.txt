@@ -1,0 +1,48 @@
+
+Die klassische Definition des Stroboskopeffektes allein kann die Problematik von Flimmern bzw. Flackern bei LED-Beleuchtungen nicht ausreichend beschreiben.
+
+- Der Stroboskopeffekt wurde früher bekannt durch die Disco-Blitzer, und heute empfehlen einige Test-Zeitschriften durch einen "Bleistift-Schwenk-Test" die Flimmerfreiheit ihrer Zimmer-Beleuchtung zu prüfen. Ein Kern des Stroboskopeffektes liegt darin, dass das Licht von einer großen Fläche stammt und damit die gesamte Netzhaut im Auge ausgeleuchtet wird. Die Grenze des wahrnehmbaren Flimmerns durch "Flächensrahler" liegt bei etwa 30-50 Hz.
+
+- Seit es LED Stripes mit hunderten Lumen pro Meter gibt, haben die kleinen einzelnen LEDs eine Helligkeit, die an kleine Laser erinnern. Man klebt diese Stripes gern in direkter Sicht an Fensterrahmen, Regale, Wände und Decken. Und weil sie so hell sind dimmen wir sie dann, und da nimmt das neue Unheil seinen Lauf: bis zu 100 LEDs/m senden ihr punktförmiges überhelles Licht in schnellen Impulsen (im Wechsel von 100% und 0% Helligkeit) auf unsere Netzhaut. Es wird also nicht die gesamte Netzhaut ausgeleuchtet, sondern wir erkennen deutlich die einzelnen LED-Lichtpunkte! Und die wandern bei jeder Augenbewegung über die Netzhaut, dabei wird PWM bis mehrere kHz als Flackern erkannt!
+
+
+*Recherche zum Thema Auge, sehr vereinfacht wiedergegeben, damit man damit gut rechnen kann*
+- das Auge enthält über 100 Mio lichtempfindliche Zellen auf ca. 4 Quadrat-Millimetern,
+- diese Zellen werden neuronal-dynamisch "gruppenweise" zusammengefasst , die "Lichterfassung" wird dann über 1 Mio "Nerven-Ausgänge" ins Gehirn geleitet,
+- damit hat jedes Auge auf circa 2x2 mm etwa 10.000x10.000 "Pixel", die neuronal zu 1000x1000 lichtempfindlichen "Gruppen" werden können,
+- das Auge hat eine Auflösung von ungefähr 1 Winkelminute = 0,016 Grad, das entspricht z.B. dem Auflösen bzw. Unterscheiden eines Punkte-Rasters von kleiner 0,1mm auf einer 2m entfernten Wand,
+
+
+*Szenario A: Flimmern*
+Wir setzen uns jetzt aufs Sofa und schauen geradeaus auf die gegenüberliegende Wand, an der in 1 Meter Höhe eine einzelne helle LED montiert ist.
+Das Licht der punktförmigen LED trifft im unbewegten Auge, durch die Pupille fokussiert, auf eine "kleine" Anzahl von lichtempfindliche Zellen. Diese Zellen können nur bis maximal 30-50 Hz als Flimmern wahrnehmen, für alles über 50 Hz ist die Verarbeitung der Lichtimpulse im Verbund von Auge und Gehirn zu träge. Ich nenne dies "Flimmern".
+
+
+*Szenario B: Flackern*
+Wir sitzen wieder auf dem Sofa, die LED leuchtet wieder in 1 Meter Höhe. Aber diesmal schweift unseren Blick an der gegenüberliegende Wand schnell vom Boden zur Decke.
+Auf der Netzhaut des Auges wandert dabei der fokussierte Lichtpunkt über die 2mm große lichtempfindliche Fläche. Bei konstantem Licht nimmt das Gehirn einen durchgehenden Lichtstreifen wahr. Bei gepulstem Licht wechseln sich auf der Netzhaut jedoch beleuchtete und nicht beleuchtete Zellen-Gruppen ab auf der 2x2mm lichtempfindliche Fläche. Das Gehirn verarbeitet diese zeitlich versetzte Anregung von örtlich unterschiedlichen Arealen der Netzhaut, und sieht die Leuchtpunkte springen. Ich nenne dies "Flackern".
+
+
+*Szenario B: das Flackern berechnen*
+Wir sitzen wieder auf dem Sofa und experimentieren mit der LED in 1 Meter Höhe. Über der LED Richtung Decke halten wir einen Zollstock mit 1m Länge und lassen ihn senkrecht an der LED vorbei fallen mit konstant 1m/s.
+Annahme: PWM 100 Hz, Duty Cycle 50%
+Resultat: da die LED 100 mal pro Sekunde an und aus geht, wird der mit 1m/s=100cm/s fallende Zollstock jeweils auf einer Strecke von 5mm beleuchtet und 5mm dunkel bleiben. Wenn das Auge den fallenden Zollstock verfolgt, dann werden durch die Drehung des Augapfels 100 verschiedene Stellen der Netzhaut belichtet und dazwischen bleiben 100 unbelichtete Sehzellen.
+
+Nun versuchen wir einmal auf die gegenüberliegende Wand zu schauen und sich für einen Meter Blickstrecke dort eine Sekunde Zeit zu lassen. Das fällt recht schwer, denn das Auge dreht sich eigentlich viel schneller bzw. nicht kontinuierlich sondern "sprunghaft".
+Die Winkelgeschwindigkeit von normalen Augenbewegungen liegt bis zu 100 Grad/Sekunde und kann bei schnellem Umblicken bis zu 600 Grad/Sekunde sein!!!
+
+Im 100 Grad Winkel geschaut auf eine Wand in 2 Meter Entfernung bedeutet (als grobe Näherung zwischen Kreisbogen und Satz des Pythagoras), dass man dort ca. 4 Meter Höhe überblickt, wohlgemerkt in 1 Sekunde.
+
+Bei einer Augenbewegung von 100 Grad/Sekunde schweift das Auge also mit 4m/s über die punktförmige LED an der Wand. Hier bedeuten jetzt eine PWM von 400Hz an der Wand einen Leucht-Streifen von "5mm beleuchtet und 5mm dunkel", und die örtliche Abfolge von virtuellen 5mm Flecken an der Wand in einer Entfernung von 2m kann das Auge sehr scharf auf der Netzhaut abbilden. 
+
+Bei 600 Grad/Sekunde Augenbewegung, also mit 24m/s, werden die gleichen "5mm hell und 5mm dunkel" bei einer PWM von 2,4kHz wahrgenommen und örtlich verteilt auf die Netzhaut gepulst.
+Selbst bei PWM von 12kHz sind die hell/dunkel Strecken an der Wand in 2m immerhin noch 0,5+0,5mm groß und das kann die Netzhaut meist gut auflösen, wenn der Leuchtpunkt an der Wand entsprechend klein und hell leuchtet (das ist vermutlich leichter erkennbar als ein Fliegendreck an weißer Wand;).
+
+
+*Szenario B: das Flackern in der Praxis*
+Die 1kHz der Philips Hue (RGB-Birnen und LightStrip+) sowie die 4Khz des Paulmann SimpleLED Sets sind bei einem schnellen Blick durch das Zimmer deutlich wahrnehmbar. LED-Streifen bestehen aus vielen kleinen einzelnen LEDs, und wenn diese LED-Streifen direkt sichtbar montiert sind, dann kann das bewegte Auge das PWM der LEDs als örtlich wanderndes Flackern auf der Netzhaut erkennen. 
+
+LED-Straßenlaternen wurden in vielen Gemeinden installiert, doch einige Arten der LED-Laternen senden leider ein PWM-moduliertes Licht. Ich habe hier eine PWM-Frequenz von nur 265Hz gemessen, was bei einem Abendspaziergang 8 PWM Intervalle auf die Netzhaut brennt (und man dabei den PWM-Cycle von 75% abschätzen kann), nur weil man an einem Baum oder dem Mond hochschaut der dahinter steht.
+
+Auto-Rückfahrleuchten mit LEDs arbeiten oft um 200 Hz als PWM Frequenz, und die Rücklichter hopsen dann als mehrfache Kopie in der Netzhaut lustig über die Autobahn, wenn man die Augen vom Tempo-100-Schild auf den Tacho lenkt. 
+
