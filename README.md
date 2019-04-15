@@ -5,9 +5,11 @@ An old Light Bulb sends 80% constant light and a 20% sine waveform as noise of 1
 
 <img src="doc/Old_Light_Bulb.jpg" width="500">
 
+
 This LED Streetlamp sends a permanent PWM of 264 Hz instead of a steady light! Going for a walk at night, this lamp is really annoying.
 
 <img src="doc/Streetlamp_264Hz.jpg" width="500">
+
 
 Philips Hue Being ceiling light and also some other Philips Hue dimmable and RGB light bulbs, run at 1 kHz PWM. That still flickers in your eyes when looking around in your appartment.
 
