@@ -1,4 +1,4 @@
-# some theory and math of PWM and eye
+*** some theory and math of PWM and eye **
 
 Die klassische Definition des Stroboskopeffektes allein kann die Problematik von Flimmern bzw. Flackern bei LED-Beleuchtungen nicht ausreichend beschreiben.
 
@@ -7,7 +7,7 @@ Die klassische Definition des Stroboskopeffektes allein kann die Problematik von
 - Seit es LED Stripes mit hunderten Lumen pro Meter gibt, haben die kleinen einzelnen LEDs eine Helligkeit, die an kleine Laser erinnern. Man klebt diese Stripes gern in direkter Sicht an Fensterrahmen, Regale, Wände und Decken. Und weil sie so hell sind dimmen wir sie dann, und da nimmt das neue Unheil seinen Lauf: bis zu 100 LEDs/m senden ihr punktförmiges überhelles Licht in schnellen Impulsen (im Wechsel von 100% und 0% Helligkeit) auf unsere Netzhaut. Es wird also nicht die gesamte Netzhaut ausgeleuchtet, sondern wir erkennen deutlich die einzelnen LED-Lichtpunkte! Und die wandern bei jeder Augenbewegung über die Netzhaut, dabei wird PWM bis mehrere kHz als Flackern erkannt!
 
 
-*Recherche zum Thema Auge, sehr vereinfacht wiedergegeben, damit man damit gut rechnen kann*
+** Recherche zum Thema Auge, sehr vereinfacht wiedergegeben, damit man damit gut rechnen kann **
 - das Auge enthält über 100 Mio lichtempfindliche Zellen auf ca. 4 Quadrat-Millimetern,
 - diese Zellen werden neuronal-dynamisch "gruppenweise" zusammengefasst , die "Lichterfassung" wird dann über 1 Mio "Nerven-Ausgänge" ins Gehirn geleitet,
 - damit hat jedes Auge auf circa 2x2 mm etwa 10.000x10.000 "Pixel", die neuronal zu 1000x1000 lichtempfindlichen "Gruppen" werden können,
