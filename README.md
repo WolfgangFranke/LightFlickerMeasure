@@ -1,4 +1,4 @@
-# LightFlickerMeasure
+# Light Flicker Measure
 ## Measures flickering lights, like PWM driven LED-systems, using Arduino.
 
 An old Light Bulb sends 80% constant light and a 20% sine waveform as 100 Hz noise ontop, so no flicker is recognized.
