@@ -24,3 +24,8 @@ Talking about LED strips, the Paulmann SimpLED-Strip Set (789.56) dims in the PW
 Totally smooth light sent by a Philips Filament Bulb (not dimmable), I really enjoy it.
 
 <img src="doc/Philips_Filament_0Hz.jpg" width="500">
+
+
+And how about an old-fashioned Neon Lamp, where we all know it does not give a good light? Yep, it does not give a good light!
+
+<img src="doc/Neon_Lamp_100Hz.jpg" width="500">
