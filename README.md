@@ -11,7 +11,7 @@ This LED Streetlamp sends a permanent PWM of 264 Hz frequency instead of a stead
 <img src="doc/Streetlamp_264Hz.jpg" width="500">
 
 
-Philips Hue Being ceiling light and also the Philips Hue Light Strip+, as well as my Philips Hue RGB light bulbs, run at 1 kHz PWM. That still flickers irritatingly in your eyes when looking around in your appartment. I'm surprised seeing that the Hue Being let's the light overshoot at the begin of a PWM=high.
+Philips Hue Being ceiling light and also the Philips Hue Light Strip+, as well as my Philips Hue RGB light bulbs, run at 1 kHz PWM. That still flickers irritatingly in your eyes when looking around in your appartment. I'm surprised seeing that the Hue Being let's overshoot the light at the begin of a PWM=high, but it may be seen due to the two LEDs providing the CCT.
 
 <img src="doc/Philips_Hue_Being_1kHz.jpg" width="500">
 
