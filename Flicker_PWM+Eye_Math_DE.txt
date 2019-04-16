@@ -1,4 +1,6 @@
-*** some theory and math of PWM and eye -> work in progress **
+*** THIS DOCUMENT IS AN EARLY DRAFT AND WORK IS IN PROGRESS TO VERIFY THE MATH ***
+
+*** some theory and math of PWM and eye ***
 
 Die klassische Definition des Stroboskopeffektes allein kann die Problematik von Flimmern bzw. Flackern bei LED-Beleuchtungen nicht ausreichend beschreiben.
 
